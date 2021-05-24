@@ -4,7 +4,8 @@
   "description": "This is the dummy app for redis and nodejs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js",
+    "test": "nodemon cache.js"
   },
   "author": "Hardik Sharma",
   "license": "ISC",
@@ -13,6 +14,8 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.3.2",
     "method-override": "^3.0.0",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.7",
     "redis": "^3.1.2",
     "swagger-jsdoc": "6.0.0",
     "swagger-ui-express": "^4.1.6"
