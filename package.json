@@ -4,7 +4,7 @@
   "description": "This is the dummy app for redis and nodejs",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon app.js",
     "test": "nodemon cache.js"
   },
   "author": "Hardik Sharma",

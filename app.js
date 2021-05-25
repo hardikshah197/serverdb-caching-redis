@@ -30,7 +30,7 @@ const swaggerDocs = swaggerJsDoc(swaggerOptions);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 //Creating a client
-let client = redis.createClient();
+let client = redis.createClient(6379, "redis");
 client.on('connect', function(){
     console.log('Connected to Redis');
 })
